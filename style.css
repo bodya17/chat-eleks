@@ -1,12 +1,12 @@
 .container {
     display: flex;
-    height: 99vh;
+    height: 99.5vh;
     border: 2px solid darkgoldenrod;
     overflow: hidden;
-
 }
 
-.messages, .panel {
+.messages,
+.panel {
     flex: 2;
     border: 1px solid red;
     height: inherit;
@@ -29,6 +29,7 @@
 }
 
 .menu {
+    display: flex;
     padding: 0;
     margin: 0;
 }
@@ -37,6 +38,7 @@
     border: 1px solid crimson;
     padding: 20px;
     margin: 0;
+    /*line-height: 100%;*/
 }
 
 .users {
@@ -52,13 +54,40 @@
 }
 
 #ham {
-    display: inline;
-    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
 }
-.top, .middle, .bottom {
+
+#ham .top {
+    background-color: darkviolet;
+}
+
+#ham .middle {
+    background-color: brown;
+}
+
+#ham .bottom {
+    background-color: peru;
+}
+
+.top,
+.middle,
+.bottom {
     width: 20px;
     height: 2px;
     background-color: black;
-    margin-bottom: 5px;
-  
-}   
+    /*margin-bottom: 5px;*/
+}
+
+#back_btn::after {
+    content: "<";
+}
+
+img {
+    border-radius: 50%;
+}
