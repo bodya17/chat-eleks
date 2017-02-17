@@ -1,14 +1,14 @@
 .container {
     display: flex;
     height: 99.5vh;
-    border: 2px solid darkgoldenrod;
+    /*border: 2px solid darkgoldenrod;*/
     overflow: hidden;
 }
 
 .messages,
 .panel {
     flex: 2;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     height: inherit;
 }
 
@@ -24,18 +24,20 @@
 .menu-item {
     display: inline-block;
     text-align: center;
-    border: 1px solid green;
+    /*border: 1px solid green;*/
     flex: 1;
 }
 
 .menu {
+    background-color: #3B3F9A;
     display: flex;
-    padding: 0;
+    padding: 25px 0;
+    padding-bottom: 25px;
     margin: 0;
 }
 
 .user {
-    border: 1px solid crimson;
+    /*border: 1px solid crimson;*/
     padding: 20px;
     margin: 0;
     /*line-height: 100%;*/
@@ -46,6 +48,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    background-color: #3B3F9A;
     overflow: scroll;
 }
 
@@ -63,17 +66,10 @@
     cursor: pointer;
 }
 
-#ham .top {
-    background-color: darkviolet;
+#ham .top, #ham .middle, #ham .bottom {
+    background-color: white;
 }
 
-#ham .middle {
-    background-color: brown;
-}
-
-#ham .bottom {
-    background-color: peru;
-}
 
 .top,
 .middle,
@@ -90,4 +86,37 @@
 
 img {
     border-radius: 50%;
+}
+
+.messages>ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 98vh;
+    width: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.messages>ul .left {
+    align-self: flex-start;
+    background-color: cyan;
+    background-color: #969AD9;
+}
+
+.messages>ul .right {
+    align-self: flex-end;
+    background-color: #F1F1F9;
+}
+
+.messages>ul>li {
+    margin: 5px 0;
+    width: 50%;
+    border-radius: 1vh;
+}
+
+.messages>ul .right img {
+    float: right;
 }
