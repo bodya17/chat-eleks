@@ -1,0 +1,64 @@
+.container {
+    display: flex;
+    height: 99vh;
+    border: 2px solid darkgoldenrod;
+    overflow: hidden;
+
+}
+
+.messages, .panel {
+    flex: 2;
+    border: 1px solid red;
+    height: inherit;
+}
+
+.messages {
+    flex: 3;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu-item {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid green;
+    flex: 1;
+}
+
+.menu {
+    padding: 0;
+    margin: 0;
+}
+
+.user {
+    border: 1px solid crimson;
+    padding: 20px;
+    margin: 0;
+}
+
+.users {
+    height: 98vh;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+}
+
+#search-user {
+    margin: 0 auto;
+}
+
+#ham {
+    display: inline;
+    margin: 0 auto;
+}
+.top, .middle, .bottom {
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 5px;
+  
+}   
